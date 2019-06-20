@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sidebar collapse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="mt-4">
+
+            <ul class="list-unstyled components mt-4 pl-2">
+                <li class="active mb-3">
+                    <a href="#" class="btn btn-light text-left">
+                        <img class="float-left mr-4" src="https://img.icons8.com/ios/25/000000/home.png">
+                        <spane>Home</spane>
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class="btn btn-light text-left">
+                        <img class="float-left mr-4" src="https://img.icons8.com/ios/25/000000/contacts.png">
+                        <spane>Profile</spane>
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class="btn btn-light  text-left">
+                        <img class="float-left mr-4" src="https://img.icons8.com/ios/25/000000/like.png">
+                        <spane>Favorites</spane>
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#" class="btn btn-light text-left">
+                        <img class="float-left mr-4" src="https://img.icons8.com/ios/25/000000/download.png">
+                        <spane>Downloads</spane>
+                    </a>
+                </li>
+                <li class="mb-3">
+                    <a href="#bestAnimeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn btn-light text-left">
+                        <img class="float-left mr-4" src="https://img.icons8.com/ios/25/000000/star.png">
+                        <spane class=" align-items-center h-100">Best Animes</spane>
+                    </a>
+                    <ul class="collapse list-unstyled" id="bestAnimeSubmenu">
+                        <li>
+                            <a class="text-info pl-5 ml-3 mt-2" href="#">
+                              <small>One piece</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-info pl-5 ml-3 mt-2" href="#">
+                                <small>Atack on titan</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-3">
+                    <a href="#tagsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle btn btn-light text-left">
+                        <img class="float-left mr-4" src="https://img.icons8.com/ios/25/000000/tags.png">
+                        <spane class=" align-items-center h-100">Tags</spane>
+                    </a>
+                    <ul class="collapse list-unstyled" id="tagsSubmenu">
+                        <li>
+                            <a class="text-info pl-5 ml-3 mt-2" href="#">
+                              <small>#manga</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-info pl-5 ml-3 mt-2" href="#">
+                                <small>#naruto</small>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                  <div>
+                      <button type="button" id="sidebarCollapse" class="btn btn-light">
+                          <img src="https://img.icons8.com/ios/25/000000/menu-rounded-filled.png">
+                      </button>
+                      <button type="button" id="" class="btn btn-light">
+                          <img src="https://img.icons8.com/ios/25/000000/installing-updates-filled.png">
+                      </button>
+                      <button type="button" id="" class="btn btn-light">
+                          <img src="https://img.icons8.com/ios/25/000000/like.png">
+                      </button>
+                  </div>
+                  <div class="row text-right">
+                      <div class="col-9">
+                          <strong class="font-weight-bold">Youssef Hoummad</strong><br>
+                          <small class="text-monospace text-muted">@youssefhoummad</small>
+                      </div>
+                      <div class="col-3">
+                          <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-6.png"/>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+          <div class="row mb-2 mx-0">
+              <form class="form-inline col-12 mx-auto " action="">
+                  <input class="form-control w-100" type="text" placeholder="Search">
+              </form>
+          </div>
+          <!-- Search Form  -->
+          <div class="row m-3">
+              <!-- <div class="card-columns">
+                  <div class="card">
+                    <img class="card-img" src="https://ib3.hulu.com/user/v3/artwork/868ca12d-a7ae-4451-8008-75681f02119e?base_image_bucket_name=hummus&base_image=6a913287-5634-46f7-8e1f-49042898792e&size=550x825&format=jpeg" alt="Card image">
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img" src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557216671.5403_tunyra_n.jpg" alt="Card image">
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img" src="https://ib3.hulu.com/user/v3/artwork/868ca12d-a7ae-4451-8008-75681f02119e?base_image_bucket_name=hummus&base_image=6a913287-5634-46f7-8e1f-49042898792e&size=550x825&format=jpeg" alt="Card image">
+                  </div>
+                  <div class="card">
+                    <img class="card-img" src="https://growtix-melupufoagt.stackpathdns.com/media/med//81/48/21/5c59fb73-9454-4114-b5e4-05ee0a46500d.png" alt="Card image">
+                  </div>
+                  
+
+                  <div class="card">
+                      <img class="card-img" src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557216671.5403_tunyra_n.jpg" alt="Card image">
+                    </div>
+  
+                    <div class="card">
+                      <img class="card-img" src="https://growtix-melupufoagt.stackpathdns.com/media/med//81/48/21/5c59fb73-9454-4114-b5e4-05ee0a46500d.png" alt="Card image">
+                    </div>
+                    
+                    <div class="card">
+                      <img class="card-img" src="https://ib3.hulu.com/user/v3/artwork/868ca12d-a7ae-4451-8008-75681f02119e?base_image_bucket_name=hummus&base_image=6a913287-5634-46f7-8e1f-49042898792e&size=550x825&format=jpeg" alt="Card image">
+                    </div>
+              </div> -->
+          </div>
+          <!-- Gallary Content  -->
+          <div id="gallary" class="mx-3">
+            <div class="tile scale-anm bcards all">     
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81rakd5f9aL._SL1500_.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="https://media.senscritique.com/media/000016448711/source_big/Kuzu_no_Honkai.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm flyers all">
+              <img src="https://pm1.narvii.com/7198/cb47a4fe15fa892905a24d0034d9a56a46f6e880r1-623-350v2_00.jpg" alt="" />
+            </div>
+            <div class="tile scale-anm web all">
+                <img src="https://i.ytimg.com/vi/GVW0gnPAAao/maxresdefault.jpg" alt="" />  
+            </div> 
+              <div class="tile scale-anm web all">
+                <img src="https://i3.sndcdn.com/artworks-000189622724-1g9kyk-t500x500.jpg" alt="" />
+              </div>
+              <div class="tile scale-anm flyers all">
+                <img src="https://www.larutadelsorigens.cat/wallpic/full/22-227305_anime-christmas-wallpaper-1080p-english-merry-christmas-shayari.jpg" alt="" />
+              </div>
+            
+          </div>
+            
+          <div style="clear:both;"></div>   
+
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
