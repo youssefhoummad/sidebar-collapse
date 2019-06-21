@@ -93,11 +93,6 @@ GALLARY STYLE
 }
 
 
-
-.scale-anm {
-  transform: scale(1);
-}
-
 .tile{
     border-radius: 15px;
     position: relative;
