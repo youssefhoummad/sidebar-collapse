@@ -1,5 +1,15 @@
 /* @youssefhoummad */
 
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body {
+  font-family: 'Droid Arabic Kufi', serif;
+  font-size: 22px;
+  Line-height: 21px;
+  /* direction: rtl;
+  padding: 5px;
+  text-align: justify; */
+  word-spacing: 1px;
+}
 
 a,
 a:hover,
